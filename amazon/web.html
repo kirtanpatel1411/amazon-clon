@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>normal website layout</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+        }
+         nav{
+            position: sticky;
+            top: 0;
+            background-color: blueviolet;
+            height: 50px;
+            
+         
+        
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 12px;
+            
+            
+            
+        }
+        nav ul li a{
+           list-style-type: none;
+           text-decoration: none;
+           color: white;
+           font-size: 20px;
+           font-weight: 600;
+           
+       }
+       a:hover{
+        /* content: ""; */
+        color: black;
+        
+       }
+       li:hover{
+        border: 2px solid black;
+       }
+       .container{
+        background-color: antiquewhite;
+        height: 500px;
+        display: flex;
+        justify-content:space-evenly;
+        margin: 0 20px;
+        
+        
+       }
+       .cont-1{
+        background-color:black;
+        height: 500px;
+        width: 500px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .cont-1 h1{
+        font-size: 100px;
+        font-weight: 700;
+       }
+       .cont-2{
+        background-color:white;
+        height: 500px;
+        width: 500px;
+        color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+       .cont-2 h1{
+        font-size: 100px;
+        font-weight: 700;
+       }
+       .sec-container{
+        background-color: blue;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        
+
+       }
+       .line{
+        background-color: brown;
+        height: 400px;
+        width: 75%;
+        margin-top: 55px;
+        border: 5px solid black;
+        border-radius: 50px;
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        
+        
+       }
+       .line p{
+        margin-top: 50px;
+       }
+       .foot{
+        background-color: black;
+        height: 200px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .foot p{
+        font-size: 25px;
+       }
+       .logo{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: darkgoldenrod;
+        border: 5px solid black;
+        border-radius: 35px;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .logo i{
+        font-size: 25PX;
+       }
+       
+    </style>
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="cont-1">
+                    <h1>Hello</h1>
+                </div>
+                <div class="cont-2">
+                    <h1>Kirtan</h1>
+                </div>
+            </div>
+            <div class="sec-container">
+                <div class="line">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Culpa corporis amet exercitationem impedit facilis
+                        dolorem excepturi debitis laborum aspernatur sit rem,
+                        ducimus reprehenderit error nihil delectus nulla
+                        adipisci qui unde at numquam minima laudantium modi?
+                        Earum minima, cumque nostrum ea voluptatum voluptatibus
+                        doloremque. Consectetur adipisci iusto delectus
+                        reprehenderit, reiciendis quae atque neque magnam
+                        facilis nulla placeat, iure consequatur, aliquam
+                        aspernatur voluptate. Reiciendis excepturi, assumenda
+                        veritatis dicta provident at. Aperiam quidem eligendi,
+                        in temporibus minima quaerat debitis autem modi
+                        laudantium porro ex voluptate ad a tempora corporis
+                        exercitationem quae consectetur aliquam quisquam qui
+                        suscipit earum? Repudiandae exercitationem ab illo natus
+                        quidem.</p>
+                </div>
+            </div>
+            <div class="logo">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+        </main>
+        <footer>
+
+            <div class="foot">
+<p>@copyright with kirtan bhimani</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
